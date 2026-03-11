@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built For Marcus Gilhooley | Club Closer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0 !important;
+            padding: 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        html {
+            scroll-behavior: smooth !important;
+            background-color: #000000 !important;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+            background-color: #000000 !important;
+            color: #FFFFFF !important;
+            line-height: 1.6 !important;
+            overflow-x: hidden !important;
+            -webkit-font-smoothing: antialiased !important;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, span, div, a, li, strong, em {
+            color: inherit !important;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            min-height: 100vh !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            padding: 60px 24px !important;
+            background: linear-gradient(180deg, #000000 0%, #0D0D0D 50%, #000000 100%) !important;
+            position: relative !important;
+            overflow: hidden !important;
+        }
+
+        .hero::before {
+            content: '' !important;
+            position: absolute !important;
+            top: -50% !important;
+            left: -50% !important;
+            width: 200% !important;
+            height: 200% !important;
+            background: radial-gradient(ellipse at center, rgba(240, 36, 36, 0.06) 0%, transparent 60%) !important;
+            pointer-events: none !important;
+        }
+
+        .hero-content {
+            position: relative !important;
+            z-index: 2 !important;
+            max-width: 900px !important;
+        }
+
+        .hero-eyebrow {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 15px !important;
+            font-weight: 600 !important;
+            letter-spacing: 4px !important;
+            text-transform: uppercase !important;
+            color: rgba(255, 255, 255, 0.5) !important;
+            margin-bottom: 16px !important;
+        }
+
+        .hero-name {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 88px !important;
+            font-weight: 900 !important;
+            font-style: italic !important;
+            color: #F02424 !important;
+            line-height: 1.05 !important;
+            margin-bottom: 24px !important;
+            text-shadow: 0 0 60px rgba(240, 36, 36, 0.4), 0 0 120px rgba(240, 36, 36, 0.15) !important;
+        }
+
+        .hero-subtitle {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 22px !important;
+            font-weight: 700 !important;
+            color: #FFFFFF !important;
+            margin-bottom: 28px !important;
+            letter-spacing: 0.5px !important;
+        }
+
+        .hero-intro {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 17px !important;
+            font-weight: 400 !important;
+            color: rgba(255, 255, 255, 0.7) !important;
+            max-width: 680px !important;
+            margin: 0 auto !important;
+            line-height: 1.75 !important;
+        }
+
+        .hero-divider {
+            width: 80px !important;
+            height: 3px !important;
+            background: #F02424 !important;
+            margin: 36px auto 0 !important;
+            border-radius: 2px !important;
+        }
+
+        /* ============ STATS BAR ============ */
+        .stats-bar {
+            background-color: #0D0D0D !important;
+            border-top: 1px solid rgba(240, 36, 36, 0.2) !important;
+            border-bottom: 1px solid rgba(240, 36, 36, 0.2) !important;
+            padding: 48px 24px !important;
+        }
+
+        .stats-container {
+            max-width: 1000px !important;
+            margin: 0 auto !important;
+            display: grid !important;
+            grid-template-columns: repeat(4, 1fr) !important;
+            gap: 24px !important;
+        }
+
+        .stat-item {
+            text-align: center !important;
+        }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 48px !important;
+            font-weight: 900 !important;
+            color: #F02424 !important;
+            line-height: 1 !important;
+            margin-bottom: 8px !important;
+        }
+
+        .stat-label {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            color: rgba(255, 255, 255, 0.5) !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1.5px !important;
+        }
+
+        /* ============ SECTION STYLES ============ */
+        .section {
+            padding: 80px 24px !important;
+        }
+
+        .section-dark {
+            background-color: #000000 !important;
+        }
+
+        .section-darker {
+            background-color: #0A0A0A !important;
+        }
+
+        .section-inner {
+            max-width: 860px !important;
+            margin: 0 auto !important;
+        }
+
+        .section-label {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 12px !important;
+            font-weight: 700 !important;
+            letter-spacing: 3px !important;
+            text-transform: uppercase !important;
+            color: #F02424 !important;
+            margin-bottom: 12px !important;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 36px !important;
+            font-weight: 800 !important;
+            color: #FFFFFF !important;
+            margin-bottom: 20px !important;
+            line-height: 1.2 !important;
+        }
+
+        .section-text {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            color: rgba(255, 255, 255, 0.7) !important;
+            line-height: 1.75 !important;
+            margin-bottom: 16px !important;
+        }
+
+        /* ============ DELIVERABLE CARDS ============ */
+        .deliverable-card {
+            background-color: #1A1A1A !important;
+            border: 1px solid rgba(255, 255, 255, 0.06) !important;
+            border-radius: 12px !important;
+            margin-bottom: 20px !important;
+            overflow: hidden !important;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+        }
+
+        .deliverable-card:hover {
+            border-color: rgba(240, 36, 36, 0.3) !important;
+            box-shadow: 0 8px 32px rgba(240, 36, 36, 0.08) !important;
+        }
+
+        .card-header {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            padding: 24px 28px !important;
+            cursor: pointer !important;
+            user-select: none !important;
+        }
+
+        .card-header-left {
+            display: flex !important;
+            align-items: center !important;
+            gap: 16px !important;
+        }
+
+        .card-icon {
+            width: 44px !important;
+            height: 44px !important;
+            border-radius: 10px !important;
+            background: linear-gradient(135deg, #F02424, #9C3131) !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-shrink: 0 !important;
+            font-size: 20px !important;
+        }
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            color: #FFFFFF !important;
+        }
+
+        .card-tag {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 11px !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            padding: 4px 12px !important;
+            border-radius: 20px !important;
+            background-color: rgba(240, 36, 36, 0.12) !important;
+            color: #F02424 !important;
+            white-space: nowrap !important;
+        }
+
+        .card-chevron {
+            width: 32px !important;
+            height: 32px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            transition: transform 0.3s ease !important;
+            flex-shrink: 0 !important;
+            margin-left: 16px !important;
+        }
+
+        .card-chevron svg {
+            width: 18px !important;
+            height: 18px !important;
+            stroke: rgba(255, 255, 255, 0.4) !important;
+            fill: none !important;
+            stroke-width: 2.5 !important;
+        }
+
+        .deliverable-card.active .card-chevron {
+            transform: rotate(180deg) !important;
+        }
+
+        .card-body {
+            max-height: 0 !important;
+            overflow: hidden !important;
+            transition: max-height 0.45s ease !important;
+        }
+
+        .card-body-inner {
+            padding: 0 28px 28px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+        }
+
+        .card-body-inner > *:first-child {
+            padding-top: 24px !important;
+        }
+
+        .card-body p, .card-body li {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 15px !important;
+            color: rgba(255, 255, 255, 0.65) !important;
+            line-height: 1.7 !important;
+        }
+
+        .card-body ul {
+            list-style: none !important;
+            margin-top: 16px !important;
+        }
+
+        .card-body ul li {
+            padding: 8px 0 !important;
+            padding-left: 24px !important;
+            position: relative !important;
+        }
+
+        .card-body ul li::before {
+            content: '' !important;
+            position: absolute !important;
+            left: 0 !important;
+            top: 16px !important;
+            width: 8px !important;
+            height: 8px !important;
+            background-color: #F02424 !important;
+            border-radius: 50% !important;
+        }
+
+        .finding-tag {
+            display: inline-block !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 10px !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+            padding: 3px 8px !important;
+            border-radius: 4px !important;
+            margin-right: 8px !important;
+            vertical-align: middle !important;
+        }
+
+        .tag-risk {
+            background-color: rgba(240, 36, 36, 0.15) !important;
+            color: #F02424 !important;
+        }
+
+        .tag-opportunity {
+            background-color: rgba(2, 104, 32, 0.15) !important;
+            color: #4ADE80 !important;
+        }
+
+        .tag-gap {
+            background-color: rgba(245, 158, 11, 0.15) !important;
+            color: #FBBF24 !important;
+        }
+
+        .angle-number {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 13px !important;
+            font-weight: 800 !important;
+            color: #F02424 !important;
+            margin-right: 8px !important;
+        }
+
+        .angle-type {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            color: rgba(255, 255, 255, 0.35) !important;
+            margin-left: 8px !important;
+        }
+
+        .card-link-row {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            margin-top: 24px !important;
+            padding-top: 20px !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+        }
+
+        .card-link {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 13px !important;
+            font-weight: 700 !important;
+            color: #F02424 !important;
+            text-decoration: none !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .card-link:hover {
+            color: #FF4444 !important;
+        }
+
+        .card-link svg {
+            width: 16px !important;
+            height: 16px !important;
+            stroke: currentColor !important;
+            fill: none !important;
+            stroke-width: 2 !important;
+        }
+
+        /* ============ IFRAME PREVIEW ============ */
+        .iframe-wrapper {
+            margin-top: 24px !important;
+            border-radius: 8px !important;
+            overflow: hidden !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            position: relative !important;
+            background-color: #111111 !important;
+        }
+
+        .iframe-toolbar {
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            padding: 10px 16px !important;
+            background-color: #111111 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+        }
+
+        .iframe-dot {
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 50% !important;
+        }
+
+        .dot-red { background-color: #F02424 !important; }
+        .dot-yellow { background-color: #FBBF24 !important; }
+        .dot-green { background-color: #026820 !important; }
+
+        .iframe-url {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 12px !important;
+            color: rgba(255, 255, 255, 0.3) !important;
+            margin-left: 12px !important;
+        }
+
+        .iframe-container {
+            position: relative !important;
+            width: 100% !important;
+            height: 420px !important;
+            overflow: hidden !important;
+        }
+
+        .iframe-container iframe {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 1200px !important;
+            height: 900px !important;
+            border: none !important;
+            transform-origin: top left !important;
+            pointer-events: none !important;
+        }
+
+        .iframe-placeholder {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+            height: 300px !important;
+            color: rgba(255, 255, 255, 0.25) !important;
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 14px !important;
+            gap: 12px !important;
+        }
+
+        .iframe-placeholder svg {
+            width: 40px !important;
+            height: 40px !important;
+            stroke: rgba(255, 255, 255, 0.15) !important;
+            fill: none !important;
+            stroke-width: 1.5 !important;
+        }
+
+        /* ============ VSL OUTLINE ============ */
+        .vsl-steps {
+            margin-top: 20px !important;
+        }
+
+        .vsl-step {
+            display: flex !important;
+            gap: 16px !important;
+            padding: 14px 0 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+        }
+
+        .vsl-step:last-child {
+            border-bottom: none !important;
+        }
+
+        .vsl-step-num {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 800 !important;
+            color: #F02424 !important;
+            min-width: 28px !important;
+            padding-top: 2px !important;
+        }
+
+        .vsl-step-title {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+            color: #FFFFFF !important;
+            margin-bottom: 4px !important;
+        }
+
+        .vsl-step-desc {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 14px !important;
+            color: rgba(255, 255, 255, 0.5) !important;
+            line-height: 1.6 !important;
+        }
+
+        /* ============ CASE STUDY ============ */
+        .case-study-section {
+            background-color: #0A0A0A !important;
+            padding: 80px 24px !important;
+        }
+
+        .case-study-card {
+            max-width: 860px !important;
+            margin: 0 auto !important;
+            background: linear-gradient(135deg, #1A1A1A 0%, #141414 100%) !important;
+            border: 1px solid rgba(240, 36, 36, 0.15) !important;
+            border-radius: 16px !important;
+            padding: 48px !important;
+            display: flex !important;
+            gap: 36px !important;
+            align-items: center !important;
+        }
+
+        .case-study-avatar {
+            flex-shrink: 0 !important;
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50% !important;
+            background: linear-gradient(135deg, #F02424, #9C3131) !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 32px !important;
+            font-weight: 900 !important;
+            color: #FFFFFF !important;
+        }
+
+        .case-study-content {
+            flex: 1 !important;
+        }
+
+        .case-study-quote {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 16px !important;
+            color: rgba(255, 255, 255, 0.75) !important;
+            line-height: 1.7 !important;
+            margin-bottom: 20px !important;
+        }
+
+        .case-study-metrics {
+            display: flex !important;
+            gap: 32px !important;
+            margin-bottom: 16px !important;
+            flex-wrap: wrap !important;
+        }
+
+        .metric-item {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .metric-value {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 28px !important;
+            font-weight: 900 !important;
+            color: #F02424 !important;
+        }
+
+        .metric-label {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            color: rgba(255, 255, 255, 0.4) !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+        }
+
+        .case-study-handle {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 14px !important;
+            color: #F02424 !important;
+            text-decoration: none !important;
+            font-weight: 600 !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .case-study-handle:hover {
+            color: #FF4444 !important;
+        }
+
+        /* ============ ABOUT SECTION ============ */
+        .about-section {
+            background-color: #000000 !important;
+            padding: 80px 24px !important;
+        }
+
+        .about-inner {
+            max-width: 680px !important;
+            margin: 0 auto !important;
+            text-align: center !important;
+        }
+
+        /* ============ CTA SECTION ============ */
+        .cta-section {
+            background: linear-gradient(180deg, #0A0A0A 0%, #000000 100%) !important;
+            padding: 100px 24px !important;
+            text-align: center !important;
+            position: relative !important;
+        }
+
+        .cta-section::before {
+            content: '' !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            width: 600px !important;
+            height: 600px !important;
+            background: radial-gradient(circle, rgba(240, 36, 36, 0.06) 0%, transparent 70%) !important;
+            pointer-events: none !important;
+        }
+
+        .cta-inner {
+            position: relative !important;
+            z-index: 2 !important;
+            max-width: 600px !important;
+            margin: 0 auto !important;
+        }
+
+        .cta-title {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 36px !important;
+            font-weight: 800 !important;
+            color: #FFFFFF !important;
+            margin-bottom: 16px !important;
+            line-height: 1.2 !important;
+        }
+
+        .cta-text {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 16px !important;
+            color: rgba(255, 255, 255, 0.6) !important;
+            margin-bottom: 36px !important;
+            line-height: 1.7 !important;
+        }
+
+        .cta-button {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            color: #FFFFFF !important;
+            background: linear-gradient(135deg, #F02424, #CC1E1E) !important;
+            padding: 18px 40px !important;
+            border-radius: 8px !important;
+            text-decoration: none !important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+            box-shadow: 0 4px 24px rgba(240, 36, 36, 0.3) !important;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 36px rgba(240, 36, 36, 0.4) !important;
+        }
+
+        .cta-button svg {
+            width: 18px !important;
+            height: 18px !important;
+            stroke: #FFFFFF !important;
+            fill: none !important;
+            stroke-width: 2 !important;
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            background-color: #000000 !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+            padding: 32px 24px !important;
+            text-align: center !important;
+        }
+
+        .footer-text {
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 13px !important;
+            color: rgba(255, 255, 255, 0.25) !important;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.35) !important;
+            text-decoration: none !important;
+            transition: color 0.2s ease !important;
+        }
+
+        .footer-link:hover {
+            color: #F02424 !important;
+        }
+
+        /* ============ SCROLL REVEAL ============ */
+        .reveal {
+            opacity: 0 !important;
+            transform: translateY(30px) !important;
+            transition: opacity 0.7s ease, transform 0.7s ease !important;
+        }
+
+        .reveal.visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s !important; }
+        .reveal-delay-2 { transition-delay: 0.2s !important; }
+        .reveal-delay-3 { transition-delay: 0.3s !important; }
+        .reveal-delay-4 { transition-delay: 0.35s !important; }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto !important;
+                padding: 100px 20px 60px !important;
+            }
+
+            .hero-name {
+                font-size: 48px !important;
+            }
+
+            .hero-subtitle {
+                font-size: 17px !important;
+            }
+
+            .hero-intro {
+                font-size: 15px !important;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 28px 16px !important;
+            }
+
+            .stat-number {
+                font-size: 36px !important;
+            }
+
+            .section-title {
+                font-size: 26px !important;
+            }
+
+            .card-header {
+                padding: 20px !important;
+            }
+
+            .card-body-inner {
+                padding: 0 20px 20px !important;
+            }
+
+            .card-title {
+                font-size: 15px !important;
+            }
+
+            .card-tag {
+                display: none !important;
+            }
+
+            .case-study-card {
+                flex-direction: column !important;
+                text-align: center !important;
+                padding: 32px 24px !important;
+            }
+
+            .case-study-metrics {
+                justify-content: center !important;
+            }
+
+            .cta-title {
+                font-size: 28px !important;
+            }
+
+            .iframe-container {
+                height: 280px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-name {
+                font-size: 38px !important;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .stat-number {
+                font-size: 30px !important;
+            }
+
+            .stat-label {
+                font-size: 11px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow reveal">Built Exclusively For</p>
+            <h1 class="hero-name reveal reveal-delay-1">Marcus Gilhooley</h1>
+            <p class="hero-subtitle reveal reveal-delay-2">A Complete Webinar Funnel System for Club Closer</p>
+            <p class="hero-intro reveal reveal-delay-3">
+                We researched your market, analysed your current funnel, and built a full webinar funnel package from scratch.
+                Inside you will find campaign angles, ad script concepts, a live registration page, a live confirmation page,
+                and a VSL outline. Everything is ready to review and deploy.
+            </p>
+            <div class="hero-divider reveal reveal-delay-3"></div>
+        </div>
+    </section>
+
+    <!-- ====== STATS BAR ====== -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Campaign Angles</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-1">
+                <div class="stat-number" data-target="3">0</div>
+                <div class="stat-label">Ad Script Concepts</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-2">
+                <div class="stat-number" data-target="2">0</div>
+                <div class="stat-label">Live Pages Built</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-3">
+                <div class="stat-number" data-target="1">0</div>
+                <div class="stat-label">VSL Outline</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== DELIVERABLES ====== -->
+    <section class="section section-dark">
+        <div class="section-inner">
+            <p class="section-label reveal">Your Deliverables</p>
+            <h2 class="section-title reveal reveal-delay-1">Everything We Built For Club Closer</h2>
+            <p class="section-text reveal reveal-delay-2">Click any card below to expand it and see the details.</p>
+
+            <!-- CARD A: Research Snapshot -->
+            <div class="deliverable-card reveal reveal-delay-2">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <div class="card-header-left">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        </div>
+                        <span class="card-title">Research Snapshot</span>
+                    </div>
+                    <div style="display: flex !important; align-items: center !important; gap: 12px !important;">
+                        <span class="card-tag">Research</span>
+                        <div class="card-chevron">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-inner">
+                        <p>We did a full audit of Club Closer's current funnel, marketing, and market positioning. Here are the key findings:</p>
+                        <ul>
+                            <li><span class="finding-tag tag-risk">Risk</span> Opt-in page has 10+ form fields. This is killing conversion rates. Best practice is 2 to 3 fields maximum for a webinar registration.</li>
+                            <li><span class="finding-tag tag-gap">Gap</span> No webinar funnel exists. The current path sends cold traffic straight to a long application form with no warming step in between.</li>
+                            <li><span class="finding-tag tag-gap">Gap</span> No email nurture sequences. Leads who do not convert immediately are lost with no follow-up system.</li>
+                            <li><span class="finding-tag tag-opportunity">Opportunity</span> 103 Trustpilot reviews (4.8 stars) are not featured anywhere in the funnel. This is a massive proof stack sitting unused.</li>
+                            <li><span class="finding-tag tag-opportunity">Opportunity</span> No YouTube presence. Competitors in the remote closing space are building audiences through YouTube content. This is an open channel.</li>
+                        </ul>
+                        <div class="card-link-row">
+                            <a href="[RESEARCH_DOC_LINK]" target="_blank" class="card-link">
+                                Read Full Research
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD B: Campaign Angles & Ad Concepts -->
+            <div class="deliverable-card reveal reveal-delay-3">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <div class="card-header-left">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <span class="card-title">Campaign Angles &amp; Ad Concepts</span>
+                    </div>
+                    <div style="display: flex !important; align-items: center !important; gap: 12px !important;">
+                        <span class="card-tag">Strategy</span>
+                        <div class="card-chevron">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-inner">
+                        <p>5 campaign angles designed for the remote closing market, plus 3 ad script concepts ready to film or adapt.</p>
+
+                        <ul>
+                            <li>
+                                <span class="angle-number">01</span>
+                                <strong style="color: #FFFFFF !important;">"The Highest-Paid Skill Nobody Talks About"</strong>
+                                <span class="angle-type">Mechanism</span>
+                            </li>
+                            <li>
+                                <span class="angle-number">02</span>
+                                <strong style="color: #FFFFFF !important;">"450+ Students. 103 Trustpilot Reviews. 4.8 Stars."</strong>
+                                <span class="angle-type">Proof-Led</span>
+                            </li>
+                            <li>
+                                <span class="angle-number">03</span>
+                                <strong style="color: #FFFFFF !important;">"Escape the 9-to-5 Without Building a Business"</strong>
+                                <span class="angle-type">Aspiration</span>
+                            </li>
+                            <li>
+                                <span class="angle-number">04</span>
+                                <strong style="color: #FFFFFF !important;">"From Bartending to &pound;2.7M"</strong>
+                                <span class="angle-type">Origin Story</span>
+                            </li>
+                            <li>
+                                <span class="angle-number">05</span>
+                                <strong style="color: #FFFFFF !important;">"Your Boss's Salary is Your Commission"</strong>
+                                <span class="angle-type">Contrarian</span>
+                            </li>
+                        </ul>
+
+                        <p style="margin-top: 20px !important;">The full document includes 3 ad script concepts across direct, story-led, and proof-led formats. Each script is ready to shoot or adapt for paid traffic.</p>
+
+                        <div class="card-link-row">
+                            <a href="[COPY_STRATEGY_DOC_LINK]" target="_blank" class="card-link">
+                                Read Full Copy Strategy
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD C: Webinar Registration Page -->
+            <div class="deliverable-card reveal">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <div class="card-header-left">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <span class="card-title">Webinar Registration Page</span>
+                    </div>
+                    <div style="display: flex !important; align-items: center !important; gap: 12px !important;">
+                        <span class="card-tag">Live Page</span>
+                        <div class="card-chevron">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-inner">
+                        <p>A high-converting webinar registration page built in Club Closer's brand. Designed to replace the current 10+ field opt-in with a friction-free 2-field form. Includes social proof from your Trustpilot reviews, student results, and Marcus's origin story.</p>
+
+                        <div class="iframe-wrapper">
+                            <div class="iframe-toolbar">
+                                <span class="iframe-dot dot-red"></span>
+                                <span class="iframe-dot dot-yellow"></span>
+                                <span class="iframe-dot dot-green"></span>
+                                <span class="iframe-url">[REGISTRATION_PAGE_URL]</span>
+                            </div>
+                            <div class="iframe-container" id="reg-iframe-container">
+                                <div class="iframe-placeholder">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    <span>Live preview will load once the page is deployed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-link-row">
+                            <a href="[REGISTRATION_PAGE_URL]" target="_blank" class="card-link">
+                                View Live Page
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD D: Confirmation Page -->
+            <div class="deliverable-card reveal reveal-delay-1">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <div class="card-header-left">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <span class="card-title">Confirmation Page</span>
+                    </div>
+                    <div style="display: flex !important; align-items: center !important; gap: 12px !important;">
+                        <span class="card-tag">Live Page</span>
+                        <div class="card-chevron">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-inner">
+                        <p>A post-registration page that keeps momentum high after someone signs up. Confirms their spot, sets expectations for the webinar, and pre-sells Marcus's authority with student results and testimonial proof. Designed to reduce no-shows and build anticipation.</p>
+
+                        <div class="iframe-wrapper">
+                            <div class="iframe-toolbar">
+                                <span class="iframe-dot dot-red"></span>
+                                <span class="iframe-dot dot-yellow"></span>
+                                <span class="iframe-dot dot-green"></span>
+                                <span class="iframe-url">[CONFIRMATION_PAGE_URL]</span>
+                            </div>
+                            <div class="iframe-container" id="conf-iframe-container">
+                                <div class="iframe-placeholder">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    <span>Live preview will load once the page is deployed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-link-row">
+                            <a href="[CONFIRMATION_PAGE_URL]" target="_blank" class="card-link">
+                                View Live Page
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD E: VSL Outline -->
+            <div class="deliverable-card reveal reveal-delay-2">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <div class="card-header-left">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                        </div>
+                        <span class="card-title">VSL Outline</span>
+                    </div>
+                    <div style="display: flex !important; align-items: center !important; gap: 12px !important;">
+                        <span class="card-tag">Script</span>
+                        <div class="card-chevron">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-inner">
+                        <p>A 9-section video sales letter outline covering the remote closing opportunity. This is the framework for a webinar or long-form video that warms prospects before they apply.</p>
+
+                        <div class="vsl-steps">
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">01</span>
+                                <div>
+                                    <div class="vsl-step-title">Hook / Pattern Interrupt</div>
+                                    <div class="vsl-step-desc">Open with the income claim that stops the scroll. Lead with the outcome, not the opportunity name.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">02</span>
+                                <div>
+                                    <div class="vsl-step-title">Problem / Agitation</div>
+                                    <div class="vsl-step-desc">Name the pain of the 9-to-5 grind, failed side hustles, and the feeling of trading time for a capped salary.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">03</span>
+                                <div>
+                                    <div class="vsl-step-title">Solution Introduction</div>
+                                    <div class="vsl-step-desc">Introduce remote closing as the mechanism. Explain why high-ticket sales is the highest-paid skill most people overlook.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">04</span>
+                                <div>
+                                    <div class="vsl-step-title">Credibility</div>
+                                    <div class="vsl-step-desc">Marcus's origin story. From bartending to building a multi-million pound training company. 450+ students trained.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">05</span>
+                                <div>
+                                    <div class="vsl-step-title">Benefits and Outcomes</div>
+                                    <div class="vsl-step-desc">Work from anywhere. Uncapped commissions. No need to build a product, brand, or following. Get paid to close deals for other businesses.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">06</span>
+                                <div>
+                                    <div class="vsl-step-title">Social Proof</div>
+                                    <div class="vsl-step-desc">Student results, Trustpilot reviews, and specific case studies showing income earned after completing the programme.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">07</span>
+                                <div>
+                                    <div class="vsl-step-title">The Offer</div>
+                                    <div class="vsl-step-desc">Walk through what Club Closer includes. Training modules, live coaching, placement support, and the community.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">08</span>
+                                <div>
+                                    <div class="vsl-step-title">Guarantee / Risk Reversal</div>
+                                    <div class="vsl-step-desc">Address the fear of investing. Position the guarantee around support and placement to remove the "what if it does not work" objection.</div>
+                                </div>
+                            </div>
+                            <div class="vsl-step">
+                                <span class="vsl-step-num">09</span>
+                                <div>
+                                    <div class="vsl-step-title">Close / Call to Action</div>
+                                    <div class="vsl-step-desc">Direct them to apply. Restate the opportunity cost of waiting. One clear next step.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-link-row">
+                            <a href="[COPY_STRATEGY_DOC_LINK]" target="_blank" class="card-link">
+                                Read Full VSL Outline
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CASE STUDY ====== -->
+    <section class="case-study-section">
+        <div class="section-inner" style="max-width: 860px !important; margin: 0 auto !important;">
+            <p class="section-label reveal">Case Study</p>
+            <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 32px !important;">Results We Have Delivered</h2>
+
+            <div class="case-study-card reveal reveal-delay-2">
+                <div class="case-study-avatar">FR</div>
+                <div class="case-study-content">
+                    <p class="case-study-quote">
+                        We built a webinar funnel for Frank Romano's sales training business.
+                        The system went live and generated revenue from month one. Now scaling toward six figures monthly.
+                    </p>
+                    <div class="case-study-metrics">
+                        <div class="metric-item">
+                            <span class="metric-value">&pound;50K</span>
+                            <span class="metric-label">First Month Revenue</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">&pound;100K</span>
+                            <span class="metric-label">Monthly Target</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">DFY</span>
+                            <span class="metric-label">Webinar Funnel</span>
+                        </div>
+                    </div>
+                    <a href="https://www.instagram.com/frankromano__/" target="_blank" class="case-study-handle">@frankromano__</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="about-section">
+        <div class="about-inner">
+            <p class="section-label reveal">Who Built This</p>
+            <h2 class="section-title reveal reveal-delay-1">Bradley Copy Ltd</h2>
+            <p class="section-text reveal reveal-delay-2">
+                We build webinar funnels, ad systems, and sales pages for training companies and coaches.
+                Everything you have seen on this page was built specifically for Club Closer based on real research into your market,
+                your competitors, and your existing assets.
+            </p>
+            <p class="section-text reveal reveal-delay-3">
+                Our pricing is performance-based. We only win when you win. No retainers. No monthly fees until the funnel is generating revenue.
+            </p>
+        </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section class="cta-section">
+        <div class="cta-inner">
+            <p class="section-label reveal">Next Step</p>
+            <h2 class="cta-title reveal reveal-delay-1">Want to Talk About Implementing This?</h2>
+            <p class="cta-text reveal reveal-delay-2">
+                If you like what you see, book a 15-minute call. We will walk through the deliverables together
+                and discuss how to get this live for Club Closer.
+            </p>
+            <a href="https://calendar.app.google/bHtRPdE8fkkvgxcD8" target="_blank" class="cta-button reveal reveal-delay-3">
+                Book a 15-Minute Call
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <p class="footer-text">
+            &copy; 2026 <a href="https://calendar.app.google/bHtRPdE8fkkvgxcD8" target="_blank" class="footer-link">Bradley Copy Ltd</a>
+        </p>
+    </footer>
+
+    <script>
+        /* ============ ACCORDION ============ */
+        function toggleCard(header) {
+            var card = header.parentElement;
+            var body = card.querySelector('.card-body');
+            var isActive = card.classList.contains('active');
+
+            if (isActive) {
+                body.style.maxHeight = '0px';
+                card.classList.remove('active');
+            } else {
+                body.style.maxHeight = body.scrollHeight + 'px';
+                card.classList.add('active');
+            }
+        }
+
+        /* ============ COUNT UP ANIMATION ============ */
+        function animateCountUp(el) {
+            var target = parseInt(el.getAttribute('data-target'), 10);
+            var duration = 1200;
+            var startTime = null;
+
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                var progress = Math.min((timestamp - startTime) / duration, 1);
+                var eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.round(eased * target);
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                }
+            }
+
+            requestAnimationFrame(step);
+        }
+
+        /* ============ SCROLL REVEAL ============ */
+        var revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    /* Trigger count-up for stat numbers */
+                    if (entry.target.classList.contains('stat-item')) {
+                        var numEl = entry.target.querySelector('.stat-number');
+                        if (numEl && !numEl.dataset.animated) {
+                            numEl.dataset.animated = 'true';
+                            animateCountUp(numEl);
+                        }
+                    }
+
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        document.querySelectorAll('.reveal').forEach(function(el) {
+            revealObserver.observe(el);
+        });
+
+        /* ============ IFRAME SCALING ============ */
+        function scaleIframes() {
+            var containers = document.querySelectorAll('.iframe-container');
+            containers.forEach(function(container) {
+                var iframe = container.querySelector('iframe');
+                if (iframe) {
+                    var containerWidth = container.offsetWidth;
+                    var scale = containerWidth / 1200;
+                    iframe.style.transform = 'scale(' + scale + ')';
+                    container.style.height = (900 * scale) + 'px';
+                }
+            });
+        }
+
+        /* Run iframe scaling on load and resize */
+        window.addEventListener('load', scaleIframes);
+        window.addEventListener('resize', scaleIframes);
+
+        /* ============ LOAD IFRAMES WHEN URLS ARE SET ============ */
+        function loadIframe(containerId, url) {
+            if (!url || url.indexOf('[') === 0) return;
+            var container = document.getElementById(containerId);
+            if (!container) return;
+            var placeholder = container.querySelector('.iframe-placeholder');
+            if (placeholder) placeholder.remove();
+            var iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.setAttribute('loading', 'lazy');
+            container.appendChild(iframe);
+            setTimeout(scaleIframes, 100);
+        }
+
+        /* Replace these function calls with real URLs once pages are deployed */
+        /* loadIframe('reg-iframe-container', 'https://your-registration-page.vercel.app'); */
+        /* loadIframe('conf-iframe-container', 'https://your-confirmation-page.vercel.app'); */
+    </script>
+
+</body>
+</html>
